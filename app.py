@@ -18,7 +18,48 @@ import sklearn.linear_model as lm
 data = pd.read_csv("https://trello-attachments.s3.amazonaws.com/5cf2142046ceb163a0e4b189/5cf4e21e143159856a320b36/5311d0b467c098f8f83a90a6da607751/Housing_Modified_prepared(1).csv")
 
 def main():
-    st.title("House Price Prediction")
+    
+    title_html = """
+    
+        <style>
+
+            .title h1 {
+                text-align: center;
+                font-size: 50px;
+                color: blue;
+            }
+
+        </style>
+
+        <div class="title">
+            <h1><i>Industrial Training Project</i></h1>
+        </div>
+
+    """
+
+    st.markdown(title_html, unsafe_allow_html=True)
+
+
+    FiveLayerHashing = """
+    
+        <style>
+
+            .title h3 {
+                text-align: center;
+                font-size: 35px;
+                color: red;
+
+            }
+
+        </style>
+
+        <div class="title">
+            <h3><i>House Price Prediction Model</i></h3>
+        </div>
+
+    """
+    st.markdown(FiveLayerHashing, unsafe_allow_html=True)
+    #st.title("House Price Prediction Model")
     #st.sidebar.title("House Price Prediction")
 
     hide_streamlit_style = """

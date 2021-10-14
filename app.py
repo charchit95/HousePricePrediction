@@ -35,9 +35,7 @@ def main():
 
         </style>
         <body>
-        <div class="title">
-            <h1><i>Industrial Training Project</i></h1>
-        </div>
+        
 
     """
 
@@ -70,20 +68,6 @@ def main():
             <style>
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
-            footer:after {
-                content:'LUVPREET SINGH  | CSE-1 | 05713202718'; 
-                visibility: visible;
-                display: block;
-                text-align: center;
-                position: relative;
-                color: black;
-                #background-color: red;
-                font-size: 20px;
-                padding: 5px;
-                padding-tip: -50px;
-                top: 2px;
-            }
-
             </style>
     """
     st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
